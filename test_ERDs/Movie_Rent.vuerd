@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": 0,
+    "scrollTop": -5,
+    "scrollLeft": -6,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -43,23 +43,23 @@
   "table": {
     "tables": [
       {
-        "name": "Users",
+        "name": "영화 이름과 장르",
         "comment": "",
         "columns": [
           {
-            "name": "대표값",
+            "name": "UniqueID",
             "comment": "",
             "dataType": "",
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": true,
+              "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
-              "pk": true,
+              "pk": false,
               "fk": false,
               "pfk": false,
               "widthName": 60,
@@ -67,8 +67,47 @@
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "a87ad028-08db-4b23-befa-25e1b40808c9"
+            "id": "4f0acdeb-ca63-40d2-b3bc-59919e21e3a5"
           },
+          {
+            "name": "영화 이름과 장르",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 102.140625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7bca4a64-6fad-447f-b3be-75bb8559daff"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 19,
+          "top": 20,
+          "zIndex": 14,
+          "widthName": 102.140625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "2f1d76f2-5004-4966-9e45-d62995c10b1b"
+      },
+      {
+        "name": "사용자들",
+        "comment": "",
+        "columns": [
           {
             "name": "이름",
             "comment": "",
@@ -90,10 +129,10 @@
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "b75ab225-c751-4780-9eb0-3cc2863fff7b"
+            "id": "0ad7ce16-dbc2-4c5d-9d7b-2ea4a4d60a88"
           },
           {
-            "name": "이메일",
+            "name": "대여자 UniqueID",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -108,54 +147,31 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 60,
+              "widthName": 100.5537109375,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "eacb8187-def7-4c0c-aaff-bb3935e1a98f"
-          },
-          {
-            "name": "직책",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "b4047d9a-2090-42cb-b220-485c253b262e"
+            "id": "f8cc7fcf-0333-4d65-a3ca-4f165e18856a"
           }
         ],
         "ui": {
           "active": false,
-          "left": 10,
-          "top": 24,
-          "zIndex": 55,
+          "left": 16,
+          "top": 155,
+          "zIndex": 22,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "473e2eb8-8bba-4339-a8e1-8fe004a176f2"
+        "id": "5f0427a7-293b-403e-9e24-14ed26463074"
       },
       {
-        "name": "Auths",
+        "name": "대여자",
         "comment": "",
         "columns": [
           {
-            "name": "대표값",
+            "name": "UniqueID",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -175,10 +191,10 @@
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "8e512619-b194-4657-ba7c-fd97aa80a2b8"
+            "id": "7bd43c35-ec9c-46e0-97d2-1c83d19ccf12"
           },
           {
-            "name": "접근권한 대표값",
+            "name": "대여자 UniqueID",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -193,86 +209,24 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 97.5703125,
+              "widthName": 100.5537109375,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "ae844a64-8dec-4619-bd3e-dd3ff1b3c02d"
+            "id": "2a86bbd5-e52d-4028-8348-31f304269d00"
           }
         ],
         "ui": {
           "active": true,
-          "left": 9,
-          "top": 331,
-          "zIndex": 59,
+          "left": 18,
+          "top": 295,
+          "zIndex": 32,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "14d8936e-7902-4bfc-9caf-daee582475e2"
-      },
-      {
-        "name": "AuthNames",
-        "comment": "",
-        "columns": [
-          {
-            "name": "접근권한명",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 67,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "908e76f3-c35b-4a0b-81a9-16d8593ab74a"
-          },
-          {
-            "name": "접근권한 대표값",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 97.5703125,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "8d96abf9-8c30-41dc-bb52-a389e121b59d"
-          }
-        ],
-        "ui": {
-          "active": false,
-          "left": 9,
-          "top": 191,
-          "zIndex": 52,
-          "widthName": 70.80859375,
-          "widthComment": 60
-        },
-        "visible": true,
-        "id": "a2a95ee2-174e-4e12-9889-4a12df49ba4e"
+        "id": "f11ec9a6-51ae-4398-ac88-d5c84dc6eb91"
       }
     ],
     "indexes": []
