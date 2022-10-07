@@ -43,8 +43,8 @@
   "table": {
     "tables": [
       {
-        "name": "영화 이름과 장르",
-        "comment": "",
+        "name": "TITLE_GERNE",
+        "comment": "영화 이름과 장르",
         "columns": [
           {
             "name": "UNIQUE_ID",
@@ -97,16 +97,16 @@
           "active": false,
           "left": 36,
           "top": 618,
-          "zIndex": 276,
-          "widthName": 102.140625,
-          "widthComment": 60
+          "zIndex": 309,
+          "widthName": 78.32421875,
+          "widthComment": 102.140625
         },
         "visible": true,
         "id": "2f1d76f2-5004-4966-9e45-d62995c10b1b"
       },
       {
-        "name": "사용자들",
-        "comment": "",
+        "name": "USERS",
+        "comment": "사용자들",
         "columns": [
           {
             "name": "NAME",
@@ -156,10 +156,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 732,
           "top": 311,
-          "zIndex": 278,
+          "zIndex": 316,
           "widthName": 60,
           "widthComment": 60
         },
@@ -167,8 +167,8 @@
         "id": "5f0427a7-293b-403e-9e24-14ed26463074"
       },
       {
-        "name": "대여자",
-        "comment": "",
+        "name": "RENTER",
+        "comment": "대여자",
         "columns": [
           {
             "name": "UNIQUE_ID_RENTER",
@@ -221,7 +221,7 @@
           "active": false,
           "left": 703,
           "top": 617,
-          "zIndex": 249,
+          "zIndex": 307,
           "widthName": 60,
           "widthComment": 60
         },
@@ -229,8 +229,8 @@
         "id": "f11ec9a6-51ae-4398-ac88-d5c84dc6eb91"
       },
       {
-        "name": "포스터",
-        "comment": "",
+        "name": "POSTER",
+        "comment": "포스터",
         "columns": [
           {
             "name": "UNIQUE_ID_TITLE_GENRE",
@@ -283,7 +283,7 @@
           "active": false,
           "left": 16,
           "top": 306,
-          "zIndex": 258,
+          "zIndex": 311,
           "widthName": 60,
           "widthComment": 60
         },
@@ -291,7 +291,7 @@
         "id": "2d86da65-6800-4474-902b-5d5ecc18966f"
       },
       {
-        "name": "",
+        "name": "POTER_LIST",
         "comment": "포스터목록",
         "columns": [
           {
@@ -345,8 +345,8 @@
           "active": false,
           "left": 37,
           "top": 21,
-          "zIndex": 274,
-          "widthName": 60,
+          "zIndex": 314,
+          "widthName": 69.716796875,
           "widthComment": 67
         },
         "visible": true,
