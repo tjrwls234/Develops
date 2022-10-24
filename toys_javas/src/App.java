@@ -5,7 +5,7 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
         System.out.print("Input : ");
-        String input = scanner.next();
+        //String input = scanner.next();
 
         // Done - MySQL workbench  실행 : JDBC 연결
         // - User/password와 접속 IP:port(localhost:3306) 접속
@@ -45,6 +45,7 @@ public class App {
 
         } catch (SQLException exception){
             exception.printStackTrace();
+            scanner.close();
         }
 
     }
