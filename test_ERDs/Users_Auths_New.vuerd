@@ -140,10 +140,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 81,
-          "top": 34,
-          "zIndex": 3,
+          "top": 33,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },
@@ -292,7 +292,7 @@
             "a87ad028-08db-4b23-befa-25e1b40808c9"
           ],
           "x": 466.16552734375,
-          "y": 109.5,
+          "y": 108.5,
           "direction": "right"
         },
         "end": {
