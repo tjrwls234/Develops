@@ -1,5 +1,4 @@
 package Health;
-
 import java.sql.*;
 import java.util.Scanner;
 
@@ -16,9 +15,12 @@ public class AppMain {
 
         try{
         Connection connection = DriverManager.getConnection(url,user,password);
+        System.out.println("DB연결 성공");
         // - query Edit
         Statement statement = connection.createStatement();
         
+        
+
         System.out.println("홀리몰리 헬스장 만족도 설문조사\n");
         String input;
         do{
@@ -29,11 +31,10 @@ public class AppMain {
             input = scanner.nextLine();
             switch(input) {
                 case "P" :
-                    // System.out.print("- 이름을 입력하세요 : ");
-                    // String loginName = scanner.nextLine();
-                    // System.out.print("- 비밀번호를 입력하세요 : ");
-                    // String loginPassword = scanner.nextLine();
-                    // break;
+                    new AppStart().startFunction(statement, scanner, connection);
+                    //버퍼 제거 ㅠ
+                    scanner.nextLine();
+                    break;
                 case "S" :
 
                     break;
@@ -44,7 +45,7 @@ public class AppMain {
 
                     break;
                 case "C" :
-                    new AppCheck().checkFuction(statement);
+                    new AppCheck().checkFuction(statement, scanner);
                     break;
                 case "SR" :
 
@@ -58,8 +59,8 @@ public class AppMain {
             }
         } while (!input.equals("Q"));
         }catch(SQLException exception){
+            System.out.println("DB접속 실패");
             exception.printStackTrace();
         }
-        scanner.close();
     }
 }

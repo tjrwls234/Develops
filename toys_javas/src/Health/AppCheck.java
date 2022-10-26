@@ -4,9 +4,8 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class AppCheck {
-    Scanner scanner = new Scanner(System.in);
 
-    public void checkFuction(Statement statement){
+    public void checkFuction(Statement statement, Scanner scanner){
         System.out.print("- 이름을 입력하세요 : ");
         String checkName = scanner.nextLine();
         System.out.print("- 비밀번호를 입력하세요 : ");
@@ -30,9 +29,6 @@ public class AppCheck {
             
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("-----------------------------------------------");
-            System.out.println("이미 가입된 회원입니다.");
-            System.out.println("-----------------------------------------------");
         }
     }
 }
